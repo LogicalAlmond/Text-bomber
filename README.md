@@ -6,6 +6,8 @@ https://www.python.org/downloads/
 
 First open up iMessage and select the thread you want to text bomb, then run
 
+**When prompted to allow access to accessibility, open system preferences and check on the box
+
 ## Guide
 1. Open a terminal window
 2. Change directory to Desktop using `cd Desktop`
