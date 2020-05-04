@@ -14,7 +14,7 @@ First open up iMessage and select the thread you want to text bomb, then run
 3. Clone repository using `git clone https://github.com/LogicalAlmond/Text-bomber`
 4. Change directory to Text-bomber using `cd Text-bomber`
 5. Install requirements.txt(see below)
-6. Run `python main.py` or `python3 main.py` depending on your version
+6. Run `python main.py -h` or `python3 main.py -h` depending on your version
 
 ## Installation:
 
