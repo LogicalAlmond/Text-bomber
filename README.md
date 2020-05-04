@@ -24,4 +24,4 @@ Python3: `pip3 install requirements.txt`
 6. Run `python main.py -h` or `python3 main.py -h` depending on your version
 
 ## Update:
-To update use `git pull https://github.com/LogicalAlmond/Text-bomber-cli
+To update use `git pull https://github.com/LogicalAlmond/Text-bomber-CLI`
