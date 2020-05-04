@@ -19,7 +19,7 @@ Python3: `pip3 install requirements.txt`
 1. Open a terminal window
 2. Change directory to Desktop using `cd Desktop`
 3. Clone repository using `git clone https://github.com/LogicalAlmond/Text-bomber-cli`
-4. Change directory to Text-bomber using `cd Text-bomber`
+4. Change directory to Text-bomber using `cd Text-bomber-cli`
 5. Install requirements.txt(see above)
 6. Run `python main.py -h` or `python3 main.py -h` depending on your version
 
