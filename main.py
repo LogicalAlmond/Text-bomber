@@ -1,33 +1,28 @@
 import pyautogui
 from time import sleep
+import argparse
 
-print("Please open iMessage and the message thread you'd like to bomb before continuing.")
+# Set up cli arguments
+parser = argparse.ArgumentParser(description='Text Bombing application. Open iMessage and the message thread you would like to bomb before continuing.')
+parser.add_argument('message', type=str, help='The message to be sent')
+parser.add_argument('max', type=int, help='Number of times to send the message')
+args = parser.parse_args()
 
-# Enable failsafe
-pyautogui.FAILSAFE = True
+# Put code into a function instead of free-ballin
+def textbomber(message, maxsend):
+    pyautogui.FAILSAFE = True
+    sleep(1)
+    pyautogui.keyDown('command')
+    pyautogui.keyDown('tab')
+    pyautogui.keyUp('command')
+    pyautogui.keyUp('tab')
+    sleep(2)
+    sent = 0
+    pyautogui.PAUSE = 0.05
+    while sent < maxsend:
+        pyautogui.typewrite(message)
+        pyautogui.press('enter')
+        sent += 1
 
-# Get basic inputs from user
-sendMsg = str(input('What would you like to send?: '))
-maxSend = int(input('How many times do you want to send it?: '))
-sent = 0
-
-# Sleep for one second
-sleep(1)
-
-# Press command+tad to switch windows
-pyautogui.keyDown('command')
-pyautogui.keyDown('tab')
-pyautogui.keyUp('command')
-pyautogui.keyUp('tab')
-
-# Sleep for 2 seconds
-sleep(2)
-
-# Pause between typing for .05 seconds
-pyautogui.PAUSE = 0.05
-
-# While loop to send the message
-while sent < maxSend:
-    pyautogui.typewrite(sendMsg)
-    pyautogui.press('enter')
-    sent += 1
+if __name__ == '__main__':
+    textbomber(args.message, args.max)
