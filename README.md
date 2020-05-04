@@ -1,5 +1,6 @@
 # Text-bomber
 A small simple text bombing program for MacOS to prank your friends.
+Comand line version.
 
 Requires python. Get latest here:
 https://www.python.org/downloads/
